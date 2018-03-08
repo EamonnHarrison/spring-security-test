@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot Thymeleaf Hello World Example</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" th:href="@{/css/main.css}" href="../static/css/main.css" />
+
+</head>
+<body>
+
+<div th:replace="fragments/header :: header" ></div>
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Spring Boot Web Thymeleaf Example</h1>
+        <h2>
+            <span>Welcome to the user zone!</span>
+        </h2>
+    </div>
+
+</div>
+<!-- /.container -->
+
+</body>
+</html>
